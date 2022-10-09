@@ -12,17 +12,17 @@ for (let i = 0; i < data.length; i++) {
 			<div class="card-image" id="fotitos">
 		
 				<img class="activator" src="${data[i].img}">
-				<div class="ojo-container activator"><i class="fa-regular fa-eye"></i></div>
+				<div class="info-container activator"><i class="fa-regular fa-eye"></i></div>
 				<div class="centrado"></div>
 				
 			</div>
 			<div class="card-content" id="contenido-tarjeta">
-				<span class="card-title activator"> ${data[i].nombre}</span>
+				<span class="card-title activator" id="span-nombre-card"> <p id="nombre-card">${data[i].nombre}</p></span>
 				<p><button id="boton-adoptar">Adoptar</button></p>
 			</div>
 			<div class="card-reveal" style="display: none; transform: translateY(0%);">
 				<span class="card-title activator text-darken-4" id="cont-nombre-reveal"><p id="nombre-margen">${data[i].nombre}</p>
-				<div class="ojo-container"><i class="fa-solid fa-xmark" id="cruz"></i></div>
+				<div class="info-container"><i class="fa-solid fa-xmark" id="cruz"></i></div>
 				<div class="centrado"></div>
 				</span>
 				<ul style="list-style: none;">
